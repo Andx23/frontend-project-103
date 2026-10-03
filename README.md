@@ -2,6 +2,8 @@
 
 [![hexlet-check](https://github.com/Andx23/frontend-project-103/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Andx23/frontend-project-103/actions)
 
+[![Tests](https://github.com/Andx23/frontend-project-103/actions/workflows/tests.yml/badge.svg)](https://github.com/Andx23/frontend-project-103/actions/workflows/tests.yml)
+
 Aprenderás a crear aplicaciones de línea de comandos (CLI), analizar y formatear datos en JSON y YAML. Además, explorarás el diseño de la arquitectura de aplicaciones y la escritura de pruebas unitarias.
 
 Proyecto de aprendizaje de Códica: https://app.codica.la/programs/frontend
@@ -18,11 +20,33 @@ Así debería funcionar: https://asciinema.org/a/Pe6QypnLEmFWssNAjCOJN1iii
 ```bash
 git clone https://github.com/Andx23/frontend-project-103.git
 cd frontend-project-103
+npm install
 ```
 
 ## Uso
 
 <!-- Agregue ejemplos de ejecución y una grabación de asciinema: esto es lo que miran los empleadores -->
+
+```bash
+node gendiff.js file1.json file2.json
+```
+
+Resultado:
+
+```text
+{
+  - follow: false
+    host: codica.io
+  - proxy: 123.234.53.22
+  - timeout: 50
+  + timeout: 20
+  + verbose: true
+}
+```
+
+### Demostración
+
+[![asciicast](https://asciinema.org/a/FsFKxx0EdGQbGI1e.svg)](https://asciinema.org/a/FsFKxx0EdGQbGI1e)
 
 ---
 
