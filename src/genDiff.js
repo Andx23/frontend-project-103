@@ -1,4 +1,5 @@
-import lodash from 'lodash';
+﻿import lodash from 'lodash';
+import parse from './parsers/parser.js';
 
 const { sortBy } = lodash;
 
@@ -72,8 +73,11 @@ const formatDiff = (diff) => {
   return `{\n${lines.join('\n')}\n}`;
 };
 
-const genDiff = (data1, data2) => {
+const genDiff = (filepath1, filepath2) => {
+  const data1 = parse(filepath1);
+  const data2 = parse(filepath2);
   const diff = buildDiff(data1, data2);
+
   return formatDiff(diff);
 };
 

@@ -1,5 +1,4 @@
-import { Command } from 'commander';
-import parse from './src/parser.js';
+﻿import { Command } from 'commander';
 import genDiff from './src/genDiff.js';
 
 const program = new Command();
@@ -11,9 +10,7 @@ program
   .argument('<filepath1>', 'first file')
   .argument('<filepath2>', 'second file')
   .action((filepath1, filepath2) => {
-    const data1 = parse(filepath1);
-    const data2 = parse(filepath2);
-    const result = genDiff(data1, data2);
+    const result = genDiff(filepath1, filepath2);
 
     console.log(result);
   });

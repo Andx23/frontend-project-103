@@ -1,5 +1,6 @@
-import fs from 'fs';
+﻿import fs from 'fs';
 import path from 'path';
+import { load } from 'js-yaml';
 
 const parse = (filepath) => {
   const absolutePath = path.resolve(process.cwd(), filepath);
@@ -8,6 +9,10 @@ const parse = (filepath) => {
 
   if (extension === '.json') {
     return JSON.parse(data);
+  }
+
+  if (extension === '.yml' || extension === '.yaml') {
+    return load(data);
   }
 
   throw new Error(`Unsupported file format: ${extension}`);
