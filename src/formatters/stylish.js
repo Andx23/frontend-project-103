@@ -18,7 +18,7 @@ const stringifyValue = (value, depth) => {
   return `{\n${lines.join('\n')}\n${closingIndent}}`;
 };
 
-const stylish = (diff, depth = 1) => {
+const formatDiff = (diff, depth) => {
   const indent = ' '.repeat(depth * 4 - 2);
 
   const lines = diff.map((item) => {
@@ -41,7 +41,7 @@ const stylish = (diff, depth = 1) => {
       case 'nested':
         return [
           `${indent}  ${item.key}: {`,
-          stylish(item.children, depth + 1),
+          formatDiff(item.children, depth + 1),
           `${indent}  }`,
         ].join('\n');
 
@@ -52,5 +52,9 @@ const stylish = (diff, depth = 1) => {
 
   return lines.join('\n');
 };
+
+const stylish = (diff) => `{
+${formatDiff(diff, 1)}
+}`;
 
 export default stylish;

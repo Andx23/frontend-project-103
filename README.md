@@ -46,7 +46,7 @@ Resultado:
 
 ### DemostraciÃ³n
 
-[![asciicast](https://asciinema.org/a/ciHJ9NCFadh0Jawb.svg)](https://asciinema.org/a/ciHJ9NCFadh0Jawb)
+[![asciicast](https://asciinema.org/a/qgzALi22kc2bwGyz.svg)](https://asciinema.org/a/qgzALi22kc2bwGyz)
 
 ---
 
@@ -60,4 +60,5 @@ Las pruebas se ejecutan en cada commit. El archivo `.github/workflows/hexlet-che
 ## Acerca de CÃ³dica
 
 [CÃ³dica](https://app.codica.la/) es una escuela de programaciÃ³n: programas de aprendizaje propios con prÃ¡ctica, apoyo de mentores y proyectos reales que quedan en su currÃ­culum. Este repositorio es uno de esos proyectos.
+
 
