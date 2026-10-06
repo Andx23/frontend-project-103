@@ -22,8 +22,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
-        run: npm test -- --run
+      - name: Run tests with coverage
+        run: make test-coverage
 
       - name: Run linter
         run: make lint
+
