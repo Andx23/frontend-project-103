@@ -5,7 +5,8 @@
   "type": "module",
   "main": "gendiff.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "author": "",
   "license": "ISC",
