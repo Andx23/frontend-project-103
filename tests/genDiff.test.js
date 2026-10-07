@@ -1,4 +1,4 @@
-﻿import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest';
 import genDiff from '../src/genDiff.js';
 
 describe('genDiff', () => {

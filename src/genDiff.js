@@ -1,4 +1,4 @@
-﻿import lodash from 'lodash';
+import lodash from 'lodash';
 import parse from './parsers/parser.js';
 import getFormatter from './formatters/index.js';
 
