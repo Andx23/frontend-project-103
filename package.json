@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![hexlet-check](https://github.com/Andx23/frontend-project-103/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Andx23/frontend-project-103/actions)",
+  "description": "Compares two configuration files and shows a difference.",
   "type": "module",
   "main": "src/index.js",
   "bin": {
