@@ -28,7 +28,7 @@ npm install
 <!-- Agregue ejemplos de ejecuciÃ³n y una grabaciÃ³n de asciinema: esto es lo que miran los empleadores -->
 
 ```bash
-node gendiff.js file1.json file2.json
+node bin/gendiff.js file1.json file2.json
 ```
 
 Resultado:
